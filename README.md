@@ -74,7 +74,7 @@ double triangleArea = triangle.GetArea();
 
 // Get info about the shape 
 ShapeInfo info = triangle.GetInfo(); 
-TriangleInfo triangleInfo = triangleInfo.SpecificInfo; 
+TriangleInfo triangleInfo = (TriangleInfo)info.SpecificInfo; 
 
 // Store retrieved data in the variables
 bool isTriangleRight = triangleInfo.IsRightTriangle; 
